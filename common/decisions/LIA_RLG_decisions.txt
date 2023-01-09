@@ -1,0 +1,182 @@
+﻿lia_jfp_test1 = {
+	is_shown = {
+		exists = c:KOR
+		this = c:KOR
+	}
+
+	possible = {
+		NOT = {
+			owns_entire_state_region = STATE_LIA_SEOUL
+		}
+	}
+
+	when_taken = {
+		add_treasury = -500
+		s:STATE_LIA_SEOUL = {
+			create_state = {
+				country = c:KOR
+				owned_provinces = { 
+					"xA0E2EE"
+				}
+			}
+			region_state:KOR = {
+				create_pop = {
+					culture = korean
+					size = 100000
+				}
+			}
+			add_homeland = korean
+		}
+		s:STATE_LIA_PYONGYANG = {
+			create_state = {
+				country = c:KOR
+				owned_provinces = { 
+					"xDD6252"
+				}
+			}
+			region_state:KOR = {
+				create_pop = {
+					culture = korean
+					size = 100000
+				}
+			}
+			add_homeland = korean
+		}
+		s:STATE_LIA_BUSAN = {
+			create_state = {
+				country = c:KOR
+				owned_provinces = { 
+					"xC3F34F"
+				}
+			}
+			region_state:KOR = {
+				create_pop = {
+					culture = korean
+					size = 100000
+				}
+			}
+			add_homeland = korean
+		}
+		s:STATE_LIA_DAEJEON = {
+			create_state = {
+				country = c:KOR
+				owned_provinces = { 
+					"xB0D000"
+				}
+			}
+			region_state:KOR = {
+				create_pop = {
+					culture = korean
+					size = 100000
+				}
+			}
+			add_homeland = korean
+		}
+		s:STATE_LIA_GWANGJU = {
+			create_state = {
+				country = c:KOR
+				owned_provinces = { 
+					"x8ACAAA"
+				}
+			}
+			region_state:KOR = {
+				create_pop = {
+					culture = korean
+					size = 100000
+				}
+			}
+			add_homeland = korean
+		}
+		s:STATE_LIA_JEJU = {
+			create_state = {
+				country = c:KOR
+				owned_provinces = { 
+					"xB0D080"
+				}
+			}
+			region_state:KOR = {
+				create_pop = {
+					culture = korean
+					size = 100000
+				}
+			}
+			add_homeland = korean
+		}
+	}
+	
+	ai_chance = {
+		base = 0
+    }	
+}
+lia_jfp_test2 = {
+	is_shown = {
+		exists = c:KOR
+		this = c:KOR
+	}
+
+	possible = {
+		always = yes
+	}
+
+	when_taken = {
+		add_treasury = -500
+		set_global_variable = lia_var_rlg_name
+		#clear_saved_scope = lia_rlg_scope_seoul
+		#s:STATE_LIA_SEOUL_n1 = {
+		#	#create_state = {
+		#	#	country = c:KOR
+		#	#	owned_provinces = { 
+		#	#		"xA0E2EE"
+		#	#	}
+		#	#}
+		#	#region_state:KOR = {
+		#	#	create_pop = {
+		#	#		culture = korean
+		#	#		size = 100000
+		#	#	}
+		#	#}
+		#	#add_homeland = korean
+		#	save_scope_as = lia_rlg_scope_seoul
+		#}
+	}
+	
+	ai_chance = {
+		base = 0
+    }	
+}
+lia_jfp_test3 = {
+	is_shown = {
+		exists = c:KOR
+		this = c:KOR
+	}
+
+	possible = {
+		always = yes
+	}
+
+	when_taken = {
+		add_treasury = -500
+		remove_global_variable = lia_var_rlg_name
+		#clear_saved_scope = lia_rlg_scope_seoul
+		#s:STATE_LIA_SEOUL_n2 = {
+		#	#create_state = {
+		#	#	country = c:KOR
+		#	#	owned_provinces = { 
+		#	#		"xA0E2EE"
+		#	#	}
+		#	#}
+		#	#region_state:KOR = {
+		#	#	create_pop = {
+		#	#		culture = korean
+		#	#		size = 100000
+		#	#	}
+		#	#}
+		#	#add_homeland = korean
+		#	save_scope_as = lia_rlg_scope_seoul
+		#}
+	}
+	
+	ai_chance = {
+		base = 0
+    }	
+}

@@ -1,0 +1,4 @@
+﻿lia_rlg_modi_blabla = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	state_tax_capacity_mult = -0.2
+}

@@ -1,0 +1,82 @@
+﻿#chi_emperor_death = {
+#	type = country
+#	text = {
+#		trigger = {
+#			NAND = {
+#				is_at_war = yes
+#				NAND = { # 북경 주 (열하 제외)를 외국 군대가 점령했나?
+#					p:x038690.controller = c:CHI
+#					p:x0DC804.controller = c:CHI
+#					p:xFBDEDF.controller = c:CHI
+#				}
+#			}
+#		}
+#		localization_key = custom_chi_emperor_death_general
+#	}
+#	text = {
+#		trigger = {
+#			NAND = {
+#				is_at_war = yes
+#				NAND = { # 열하를 외국 군대가 점령했나?
+#					p:x0F5604.controller = c:CHI
+#					p:x2AD313.controller = c:CHI
+#					p:xAA031A.controller = c:CHI
+#				}
+#			}
+#		}
+#		localization_key = custom_chi_emperor_death_rehe
+#	}
+#	text = {
+#		trigger = {
+#			NAND = {
+#				is_at_war = yes
+#				NOT = { s:STATE_SHANXI.controller = c:CHI }
+#			}
+#		}
+#		localization_key = custom_chi_emperor_death_xian
+#	}
+#	text = {
+#		trigger = {
+#			NAND = {
+#				is_at_war = yes
+#				NOT = { s:STATE_NANJING.controller = c:CHI }
+#			}
+#		}
+#		localization_key = custom_chi_emperor_death_nanjing
+#	}
+#	text = {
+#		localization_key = custom_chi_emperor_death_general
+#	}
+#}
+lia_rlg_cl_seoul_1 = {
+	type = building
+	random_valid = no
+	log_loc_errors = no
+	
+	text = {
+		trigger = {
+			has_global_variable = lia_var_rlg_name
+		}
+		localization_key = STATE_LIA_SEOUL_n1
+	}
+
+	text = {
+		localization_key = STATE_LIA_SEOUL_n2
+	}
+}
+lia_rlg_cl_seoul_2 = {
+	type = state
+	random_valid = no
+	log_loc_errors = no
+	
+	text = {
+		trigger = {
+			has_global_variable = lia_var_rlg_name
+		}
+		localization_key = STATE_LIA_SEOUL_n1
+	}
+
+	text = {
+		localization_key = STATE_LIA_SEOUL_n2
+	}
+}
